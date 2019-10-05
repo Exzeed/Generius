@@ -1,18 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//4:45pm
 public class SpaceController : MonoBehaviour
 {
     public float horizontalSpeed;
     public float resetPosition;
     public float resetPoint;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //Reset();
-    }
 
     // Update is called once per frame
     void Update()
