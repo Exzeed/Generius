@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Util;
-
+//6:45pm oct.5
 public class PlayerController : MonoBehaviour
 {
     public Speed speed;
@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     //public GameController gameController;
 
     // private instance variables
-    private AudioSource _thunderSound;
-    private AudioSource _yaySound;
+    //private AudioSource _thunderSound;
+    //private AudioSource _yaySound;
 
     // Start is called before the first frame update
     /*void Start()
@@ -28,25 +28,32 @@ public class PlayerController : MonoBehaviour
         CheckBounds();
     }
 
+    /// <summary>
+    /// This method reads player input and moves the player character accordingly
+    /// </summary>
     public void Move()
     {
         Vector2 newPosition = transform.position;
 
+        //move right
         if (Input.GetAxis("Horizontal") > 0.0f)
         {
             newPosition += new Vector2(speed.max, 0.0f);
         }
 
+        //move left
         if (Input.GetAxis("Horizontal") < 0.0f)
         {
             newPosition += new Vector2(speed.min, 0.0f);
         }
 
+        //move down
         if (Input.GetAxis("Vertical") < 0.0f)
         {
             newPosition += new Vector2(0.0f, speed.min);
         }
 
+        //move up
         if (Input.GetAxis("Vertical") > 0.0f)
         {
             newPosition += new Vector2(0.0f, speed.max);
@@ -69,11 +76,13 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector2(boundary.Left, transform.position.y);
         }
 
+        //check bottom boundary
         if (transform.position.y < boundary.Bottom)
         {
             transform.position = new Vector2(transform.position.x, boundary.Bottom);
         }
 
+        //check top boundary
         if (transform.position.y > boundary.Top)
         {
             transform.position = new Vector2(transform.position.x, boundary.Top);

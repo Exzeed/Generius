@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//4:45pm
+//4:45pm oct.5
 public class SpaceController : MonoBehaviour
 {
     public float horizontalSpeed;
@@ -16,7 +16,7 @@ public class SpaceController : MonoBehaviour
     }
 
     /// <summary>
-    /// This method moves the ocean down the screen by verticalSpeed
+    /// This method moves the background to the left of the screen by horizontalSpeed
     /// </summary>
     void Move()
     {
@@ -28,7 +28,7 @@ public class SpaceController : MonoBehaviour
     }
 
     /// <summary>
-    /// This method resets the ocean to the resetPosition
+    /// This method resets the background to the resetPosition
     /// </summary>
     void Reset()
     {
@@ -36,7 +36,7 @@ public class SpaceController : MonoBehaviour
     }
 
     /// <summary>
-    /// This method checks if the ocean reaches the lower boundary
+    /// This method checks if the space background reaches the farthest left boundary
     /// and then it Resets it
     /// </summary>
     void CheckBounds()
