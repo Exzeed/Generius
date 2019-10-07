@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1081271606701537371}
   m_Layer: 0
   m_Name: Game Controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,5 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alien: {fileID: 2418824177579893946, guid: 0687385808022b04e8c40d80875ebd60, type: 3}
   planet: {fileID: 3784922687774536267, guid: 1603b657970a8ba49bec51f929268f3c, type: 3}
-  numberOfAliens: 4
+  numberOfAliens: 5
   aliens: []
+  lives: 0
+  score: 0
+  livesLabel: {fileID: 0}
+  scoreLabel: {fileID: 0}

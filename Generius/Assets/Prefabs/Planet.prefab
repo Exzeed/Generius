@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3784922687774536375}
   m_Layer: 0
   m_Name: Planet
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.505
+  m_Radius: 0.5
 --- !u!114 &3784922687774536375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   horizontalSpeed: 0.05
   boundary:
-    Top: 4
+    Top: 3.2
     Right: 7
     Bottom: -4
     Left: -7

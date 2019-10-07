@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using Util;
 //6:45pm oct.5
+//9:00pm oct.6
 public class PlayerController : MonoBehaviour
 {
     public Speed speed;
     public Boundary boundary;
 
-    //public GameController gameController;
+    public GameController gameController;
 
     // private instance variables
     //private AudioSource _thunderSound;
@@ -89,18 +90,21 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    /*void OnTriggerEnter2D(Collider2D other)
+    /// <summary>
+    /// this method performs actions when player collider interacts with another collider
+    /// </summary>
+    void OnTriggerEnter2D(Collider2D other)
     {
         switch (other.gameObject.tag)
         {
-            case "Cloud":
-                _thunderSound.Play();
+            case "Enemy":
+             //   _thunderSound.Play();
                 gameController.Lives -= 1;
                 break;
-            case "Island":
-                _yaySound.Play();
+            case "Planet":
+                //_yaySound.Play();
                 gameController.Score += 100;
                 break;
         }
-    }*/
+    }
 }
