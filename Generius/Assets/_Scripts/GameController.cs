@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 //8:55pm oct.6
+//9:35pm oct.6
 public class GameController : MonoBehaviour
 {
     [Header("Scene Game Objects")]
@@ -12,9 +13,9 @@ public class GameController : MonoBehaviour
     public int numberOfAliens;
     public List<GameObject> aliens;
 
-    /*[Header("Audio Sources")]
+    [Header("Audio Sources")]
     public SoundClip activeSoundClip;
-    public AudioSource[] audioSources;*/
+    public AudioSource[] audioSources;
 
     [Header("Scoreboard")]
     [SerializeField]
@@ -66,19 +67,19 @@ public class GameController : MonoBehaviour
     /// </summary>
     private void SceneSetup()
     {
-        //activeSoundClip = SoundClip.ENGINE;
+        activeSoundClip = SoundClip.SPACE;
 
         Lives = 7;
         Score = 0;
 
-        /*if ((activeSoundClip != SoundClip.NONE) && (activeSoundClip != SoundClip.NUM_OF_CLIPS))
+        if ((activeSoundClip != SoundClip.NONE) && (activeSoundClip != SoundClip.NUM_OF_CLIPS))
         {
             AudioSource activeAudioSource = audioSources[(int)activeSoundClip];
             activeAudioSource.playOnAwake = true;
             activeAudioSource.loop = true;
             activeAudioSource.volume = 0.5f;
             activeAudioSource.Play();
-        }*/
+        }
 
         // creates an empty container (list) of type GameObject
         aliens = new List<GameObject>();

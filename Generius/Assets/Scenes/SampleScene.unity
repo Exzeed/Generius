@@ -584,6 +584,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Game Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 1081271606701537371, guid: c4a68ea35219f0e4d8d40ceefc427e1e,
+        type: 3}
+      propertyPath: livesLabel
+      value: 
+      objectReference: {fileID: 1944952356}
+    - target: {fileID: 1081271606701537371, guid: c4a68ea35219f0e4d8d40ceefc427e1e,
+        type: 3}
+      propertyPath: scoreLabel
+      value: 
+      objectReference: {fileID: 2126591071}
     - target: {fileID: 1081271606701537364, guid: c4a68ea35219f0e4d8d40ceefc427e1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -639,15 +649,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1081271606701537371, guid: c4a68ea35219f0e4d8d40ceefc427e1e,
-        type: 3}
-      propertyPath: livesLabel
-      value: 
-      objectReference: {fileID: 1944952356}
-    - target: {fileID: 1081271606701537371, guid: c4a68ea35219f0e4d8d40ceefc427e1e,
-        type: 3}
-      propertyPath: scoreLabel
-      value: 
-      objectReference: {fileID: 2126591071}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a68ea35219f0e4d8d40ceefc427e1e, type: 3}

@@ -4,6 +4,7 @@ using UnityEngine;
 using Util;
 //6:45pm oct.5
 //9:00pm oct.6
+//9:30pm oct.6
 public class PlayerController : MonoBehaviour
 {
     public Speed speed;
@@ -12,15 +13,15 @@ public class PlayerController : MonoBehaviour
     public GameController gameController;
 
     // private instance variables
-    //private AudioSource _thunderSound;
-    //private AudioSource _yaySound;
+    private AudioSource explosionSound;
+    private AudioSource pickupSound;
 
     // Start is called before the first frame update
-    /*void Start()
+    void Start()
     {
-        _thunderSound = gameController.audioSources[(int)SoundClip.THUNDER];
-        _yaySound = gameController.audioSources[(int)SoundClip.YAY];
-    }*/
+        explosionSound = gameController.audioSources[(int)SoundClip.EXPLOSION];
+        pickupSound = gameController.audioSources[(int)SoundClip.PICKUP];
+    }
 
     // Update is called once per frame
     void Update()
@@ -98,11 +99,11 @@ public class PlayerController : MonoBehaviour
         switch (other.gameObject.tag)
         {
             case "Enemy":
-             //   _thunderSound.Play();
+                explosionSound.Play();
                 gameController.Lives -= 1;
                 break;
             case "Planet":
-                //_yaySound.Play();
+                pickupSound.Play();
                 gameController.Score += 100;
                 break;
         }
