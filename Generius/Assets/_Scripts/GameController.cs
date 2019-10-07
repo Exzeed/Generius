@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     [Header("Scene Game Objects")]
     public GameObject alien;
-    //public GameObject island;
+    public GameObject planet;
     public int numberOfAliens;
     public List<GameObject> aliens;
 
@@ -151,7 +151,7 @@ public class GameController : MonoBehaviour
             aliens.Add(Instantiate(alien));
         }
 
-        //Instantiate(island);
+        Instantiate(planet);
     }
 
     // Update is called once per frame

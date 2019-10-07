@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   alien: {fileID: 2418824177579893946, guid: 0687385808022b04e8c40d80875ebd60, type: 3}
+  planet: {fileID: 3784922687774536267, guid: 1603b657970a8ba49bec51f929268f3c, type: 3}
   numberOfAliens: 4
   aliens: []

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 717444991889308319}
   m_Layer: 0
   m_Name: Ship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed:
-    min: -0.08
-    max: 0.08
+    min: -0.05
+    max: 0.05
   boundary:
     Top: 4
     Right: 5.8
